@@ -4,10 +4,10 @@
           "id": 1,
           "title": "Joey doesnt share what?",
           "answerOptions":[
-              {"answerText": "A: clothes", "isCorrect": false },
-              {"answerText": "B: food", "isCorrect": true },
-              {"answerText": "C: advice", "isCorrect": false },
-              {"answerText": "D: hugs", "isCorrect": false }
+              {"answerText": "A: clothes", "answerId": 1 },
+              {"answerText": "B: food", "answerId": 2 },
+              {"answerText": "C: advice", "answerId": 3 },
+              {"answerText": "D: hugs", "answerId": 4 }
           ],
           "selectedAnswers": [1,2],
           "correctAnswers": [2]

@@ -11,9 +11,21 @@ function App() {
     const [reset, setReset] = useState(false);
     const [data,setData] = useState(null);
     const [clicked, setClicked] = useState(false)
+    const [selectedAnswers, setSelectedAnswers] = useState([]);
+
+    //toggleAnswerId
+    //proverava da li state to ima 
+    //setujemo correct answers
+
+    //nekoStanje => true/false
+
+    const toggleAnswerId = (answerId, nekoStanje) => {
+      
+    }
+    
   
-    const niz=[3,1,2];
-    const niz2=[1,2,3];
+    const niz=[3,1,2,4];
+    const niz2=[1,2,3,4];
 
     console.log(niz.sort().toString()===niz2.toString());
 
@@ -54,7 +66,7 @@ function App() {
               <div key={i} className="quiz__section">
                 {/* <div>{index===1 ?<button>Previous</button>: <button></button> }</div> */}
                 <Questions title={el.title}/>
-                <Answers options={el.answerOptions}/>
+                <Answers setSelected={() => toggleAnswerId(answerId, nekoStanje)} options={el.answerOptions}/>
               </div>
              ) 
             }

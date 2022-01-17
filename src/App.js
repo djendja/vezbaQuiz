@@ -66,7 +66,8 @@ function App() {
               <div key={i} className="quiz__section">
                 {/* <div>{index===1 ?<button>Previous</button>: <button></button> }</div> */}
                 <Questions title={el.title}/>
-                <Answers setSelected={() => toggleAnswerId(answerId, nekoStanje)} options={el.answerOptions}/>
+                {/* setSelected={() => toggleAnswerId(answerId, nekoStanje)} */}
+                <Answers options={el.answerOptions}/>
               </div>
              ) 
             }
